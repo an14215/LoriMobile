@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddRecordActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/colorBlue">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextStyleNormalBold20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/TextStyleNormalBold20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/project_title"
+            android:textColor="@color/colorBlue" />
+
+        <TextView
+            android:id="@+id/tvProject"
+            style="@style/TextStyleNormal20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:onClick="onClickChooseProject"
+            android:text="@string/not_check" />
+
+        <TextView
+            style="@style/TextStyleNormalBold20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/task_title"
+            android:textColor="@color/colorBlue" />
+
+        <TextView
+            android:id="@+id/tvTask"
+            style="@style/TextStyleNormal20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:enabled="false"
+            android:onClick="onClickChooseTask"
+            android:text="@string/not_check" />
+
+
+        <TextView
+            style="@style/TextStyleNormalBold20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/duration_title"
+            android:textColor="@color/colorBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:id="@+id/etDurationHour"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:enabled="false"
+                android:text="00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hour_title" />
+
+            <EditText
+                android:id="@+id/etDurationMinutes"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:enabled="false"
+                android:text="00"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minutes_title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Часы"
+                android:layout_marginLeft="10dp"
+                style="@style/TextStyleNormal16"
+                android:textColor="@color/colorBlue"/>
+            <SeekBar
+                android:id="@+id/seekBarHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="23"
+                android:progress="0"
+                android:tag="sbHours"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Минуты"
+                android:layout_marginLeft="10dp"
+                style="@style/TextStyleNormal16"
+                android:textColor="@color/colorBlue"/>
+            <SeekBar
+                android:id="@+id/seekBarMinutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="11"
+                android:progress="0"
+                android:tag="sbMinutes"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextStyleNormalBold20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/description_title"
+            android:textColor="@color/colorBlue" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            style="@style/TextStyleNormal20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/ButtonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/button_suggested"
+            android:onClick="onClickSave"
+            android:text="@string/save"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+</LinearLayout>

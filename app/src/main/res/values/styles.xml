@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash_screen</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="ButtonTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ViewTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="AppNameStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ViewTextAccentStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="ListView" parent="Base.Widget.AppCompat.ListView">
+        <item name="android:cacheColorHint">@color/colorWhite</item>
+        <item name="android:divider">@color/colorWhite</item>
+        <item name="android:dividerHeight">10dp</item>
+    </style>
+
+    <style name="TextStyleNormalBold20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStyleNormal20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="TextStyleNormalBold18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextStyleNormal16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="TextStyleNormal24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="TextStyleNormalBold24">
+        <item name="android:textSize">24sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

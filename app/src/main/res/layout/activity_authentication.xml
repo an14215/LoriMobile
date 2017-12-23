@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.example.developer.lorimobile.activity.AuthenticationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/app_name_big"
+            android:gravity="center"
+            style="@style/AppNameStyle"/>
+
+        <EditText
+            android:id="@+id/etLogin"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text"
+            android:drawableRight="@android:drawable/ic_menu_myplaces"
+            android:gravity="center"
+            android:hint="@string/login"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorGrey"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text"
+            android:drawableRight="@android:drawable/ic_menu_view"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorGrey"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/colorBlack"/>
+
+        <Button
+            android:id="@+id/btnGo"
+            style="@style/ButtonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_suggested"
+            android:text="ВОЙТИ"
+            android:textColor="@color/colorWhite"
+            android:onClick="onBtnSignInClick"/>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

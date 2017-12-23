@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">LoriMobile</string>
+    <string name="app_name_big">LORI TIMESHEETS</string>
+
+    <!--Авторизация-->
+    <string name="sign_in">Войти</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="error_empty_login">Введите логин</string>
+    <string name="error_empty_password">Введите пароль</string>
+    <string name="error_invalid_login_or_password">Неверный логин или пароль</string>
+    <string name="network_failed">Проверьте подключение к интернету и повторите попытку</string>
+
+
+    <string name="monday_name">ПН</string>
+    <string name="tuesday_name">ВТ</string>
+    <string name="wednesday_name">СР</string>
+    <string name="thursday_name">ЧТ</string>
+    <string name="friday_name">ПТ</string>
+    <string name="saturday_name">СБ</string>
+    <string name="sunday_name">ВС</string>
+
+    <!--Добавление записи -->
+    <string name="project_title">Проект: </string>
+    <string name="task_title">Задача: </string>
+    <string name="duration_title">Продолжительность: </string>
+    <string name="description_title">Описание</string>
+    <string name="hour_title">ч</string>
+    <string name="minutes_title">мин</string>
+    <string name="save">Сохранить</string>
+    <string name="not_check">Не выбрано</string>
+
+    <string name="title_choose_project">Выберите проект</string>
+    <string name="title_choose_task">Выберите задачу</string>
+    <string name="dialog_btn_cancel">Отмена</string>
+
+    <!--Главный экран-->
+    <string name="choose_week">Выберите неделю</string>
+
+    <!--Список time entry-->
+    <string name="sign_out">Выйти</string>
+
+    <!--Для контекстного меню-->
+    <string-array name="context_menu_action">
+        <item>Редактировать</item>
+        <item>Удалить</item>
+    </string-array>
+
+    <string name="insert_time_entry_title">Добавление новой записи</string>
+    <string name="update_time_entry_title">Изменение записи</string>
+    <!--Поиск-->
+    <string name="search_title">Поиск</string>
+    <string name="find">Найти</string>
+    <string name="error_date">Дата начала должна быть меньше даты окончания</string>
+    <string name="date_title">Дата</string>
+    <string name="error_not_found">Записи не найдены</string>
+    <string name="empty_field">Отсутствует</string>
+    <string name="search">Поиск...</string>
+
+</resources>

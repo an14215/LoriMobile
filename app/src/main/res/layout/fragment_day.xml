@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/background_day">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@color/colorBlue">
+           <TextView
+               android:id="@+id/tvNameDay"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:textColor="@color/colorWhite"
+               style="@style/TextStyleNormalBold20"
+               android:layout_marginLeft="10dp"/>
+           <TextView
+               android:id="@+id/tvNumDayOfMonth"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="0"
+               android:textColor="@color/colorWhite"
+               style="@style/TextStyleNormalBold20"
+               android:layout_marginRight="10dp"/>
+
+       </LinearLayout>
+       <ListView
+           android:id="@+id/lvTimeEntry"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingBottom="10dp"></ListView>
+   </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>
